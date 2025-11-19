@@ -11,34 +11,31 @@ This repository contains a complete analytical workflow for developing and valid
 
 ├── Model Training
 
-│ ├── Machine learning model comparison and hyperparameter optimization.py # Multiple ML algorithms comparison and Performance metrics of the machine learning algorithms on
-the training set.
+│ ├── Machine learning model comparison and hyperparameter optimization.py # Machine Learning algorithms comparison with plots of performance metrics,
 
-│ ├── Wilcoxon-RankSum Test.R # Statistical significance testing
+│ ├── Wilcoxon-RankSum Test.R # Statistical significance testing between FSLR and other algorithms (Lasso, Ridge, ElasticNet, GBDT, RF, XGBoost)
 
 │ ├── FSLR model training.py # Forward Stepwise Linear Regression
 
-│ ├── VIF Selected Feature Procedure.R # Feature selection with VIF
+│ ├── VIF Selected Feature Procedure.py # Feature selection with VIF
 
 
 ├── Model assessment
 
-│ ├── Comparison with BMI.py # Benchmark against BMI
-
 │ ├── DW Test.R # Durbin-Watson test for autocorrelation
 
-│ ├── Normality Test.R # Distribution normality checks
+│ ├── Normality Test.R # Distribution normality checks of residual and variables with plots.
 
-│ ├── SHAP analysis.py # Model interpretability analysis
+│ ├── SHAP analysis.py # Model interpretability analysis with shap summary plots.
 
-│ ├── Subgroup analysis.py # Stratified performance analysis
+│ ├── Subgroup analysis.py # Stratified performance analysis with plots.
 
-
+│ ├── Comparison with BMI.py # Systematic evaluation of our equations and conventional anthropometric indices in the assessment of adiposity relative indices.
 
 
 ├── Figure Generation
 
-│ └── Regression plot & Bland-Altman.py # Visualization and validation plots
+│ └── Regression plot & Bland-Altman.py # Regression scatterplots and Bland-Altman plots for DXA values vs. predicted values.
 
 
 └── README.md
